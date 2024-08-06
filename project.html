@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project one</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Ramabhadra&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+    rel="stylesheet">
+
+
+
+</head>
+
+<body>
+  <!-- navbar -->
+  <header>
+    <div class="navcontainer">
+      <div class="site-nav">
+        <div class="site-nav__logo">
+          <a href=""><img src="images/AF Logo Black.png" alt="logo" width="150"></a>
+        </div>
+        <nav class="site-nav__navlinks">
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Artchive</a></li>
+            <li><a href="#">Resume</a></li>
+          </ul>
+        </nav>
+      </div>
+  </header>
+
+
+
+  <!-- heroimage -->
+  <section class="project-heroimage">
+    <div class="project-heroimage__banner">
+      <img src="images/placeholder3.gif" alt="project-hero-image__banner">
+    </div>
+  </section>
+
+  <!-- projectdescription -->
+  <section class="project-describe">
+    <div class="project-describe__title">
+      <h2>Project One </h2>
+      <h4>Angus Fong</h4>
+    </div>
+    <div class="project-describe__goal">
+      <h4>Goals</h4>
+      <ul>
+        <li>demonstrate</li>
+        <li>exercise</li>
+        <li>empathize</li>
+    </div>
+    <div class="project-describe__role">
+      <h4>Roles</h4>
+      <p>hi im roles</p>
+    </div>
+    <div class="project-describe__solution">
+      <h4>Solution</h4>
+      <p>hi im solutions</p>
+    </div>
+  </section>
+
+  <!-- lightbox -->
+  <section class="lightbox">
+    <h2 style="text-align:center">Project Gallery</h2>
+    <div class="row">
+      <div class="column">
+        <img src="images/placeholder.gif" style="width:100%" onclick="openModal();currentSlide(1)"
+          class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="images/placeholder1.gif" style="width:100%" onclick="openModal();currentSlide(2)"
+          class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="images/placeholder2.gif" style="width:100%" onclick="openModal();currentSlide(3)"
+          class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="images/placeholder3.gif" style="width:100%" onclick="openModal();currentSlide(4)"
+          class="hover-shadow cursor">
+      </div>
+    </div>
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+
+        <div class="mySlides">
+          <div class="numbertext">1 / 4</div>
+          <img src="images/placeholder.gif" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">2 / 4</div>
+          <img src="images/placeholder1.gif" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">3 / 4</div>
+          <img src="images/placeholder2.gif" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">4 / 4</div>
+          <img src="images/placeholder3.gif" style="width:100%">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+
+
+        <div class="column">
+          <img class="demo cursor" src="img_nature_wide.jpg" style="width:100%" onclick="currentSlide(1)"
+            alt="Nature and sunrise">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="img_snow_wide.jpg" style="width:100%" onclick="currentSlide(2)" alt="Snow">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="img_mountains_wide.jpg" style="width:100%" onclick="currentSlide(3)"
+            alt="Mountains and fjords">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="img_lights_wide.jpg" style="width:100%" onclick="currentSlide(4)"
+            alt="Northern Lights">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- footer -->
+  <footer>
+    <div class="footercontainer">
+      <div class="site-footer">
+        <div class="site-footer__hook">
+          <h4>Want to chat about my qualifications?</h4>
+        </div>
+        <div class="site-footer__email">
+          <a href="mailto:angusghfong@gmail.com">email me</a>
+        </div>
+        <div class="site-footer__socials__text">
+          <h4> Find me here! </h4>
+        </div>
+        <nav class="site-footer__socials">
+          <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">YouTube</a></li>
+          </ul>
+        </nav>
+        <div class="site-footer__linkedin__text">
+          <h4> And peep my LinkedIn! </h4>
+        </div>
+        <nav class="site-footer__linkedin">
+          <ul>
+            <li><a href="#">LinkedIn</a></li>
+          </ul>
+        </nav>
+      </div>
+
+    </div>
+  </footer>
+</body>
+<script src="js/main.js">
+</script>
+
+</html>
